@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #366b6b;
+    background: #3c3f3f;
     font-size: 14px;
     line-height: 22px;
     color: #444444;
@@ -39,20 +39,11 @@ pre{
     color: #009fd9;
     border: solid #0bb5f4;
     border-radius: 30px;
-    padding: 20px 10px 0px 20px;
+    background-color: #2b2b2b;
 }
 .semi_bold{
     font-weight: 500;
     font-style: 16px;
-}
-
-.header{
-    display: flex;
-    width: 800px;
-    margin: 0 auto;
-    height: 80px;
-    padding: 10px;
-    background: #5c5c5c;
 }
 
 .resume{
@@ -64,7 +55,7 @@ pre{
 
 .resume .resume_left{
     width: 280px;
-    background: #0bb5f4;
+    background: #6d6d6d;
 }
 
 .resume .resume_left .resume_profile{
@@ -73,9 +64,10 @@ pre{
 }
 
 .resume .resume_left .resume_profile img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    width: 19em;
+    height: 25em;
+    padding-left: 1em;
+    padding-top: 1em;
 }
 
 .resume .resume_left .resume_content{
@@ -167,14 +159,10 @@ pre{
     background: #fff;
 }
 
-.resume .resume_right{
-    width: 520px;
-    background: #fff;
-    padding: 25px;
-}
+
 
 .resume .resume_right h2{
-    color: #0bb5f4;
+    color: #7b7b7b;
 }
 
 
@@ -204,7 +192,40 @@ pre{
     margin-bottom: 0;
 }
 
-/*****************/
+/****** Code 
+
+.resume .resume_right .resume_work ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume_right .resume_work ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 40%;
+    position: relative;
+    color: #0bb5f4;
+}
+
+
+
+.resume .resume_right .resume_work ul li i{
+    position: relative;
+    font-size: 30px;
+}
+
+.resume .resume_right .resume_work ul li::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    height: 2px;
+    background: #0bb5f4;
+}
+
+*****************/
 
 .resume .resume_right .resume_education ul li:before,
 .resume .resume_right .resume_english_level ul li:before,
@@ -230,13 +251,95 @@ pre{
     background: #0bb5f4;
 }
 
+/****** Hobby
 
-/****** Project *******/
+.resume .resume_right .resume_hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
 
+.resume .resume_right .resume_hobby ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 40%;
+    position: relative;
+    color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i{
+    font-size: 25px;
+}
+
+.resume .resume_right .resume_hobby ul li::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    height: 2px;
+    background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child::before,
+.resume .resume_right .resume_work ul li:last-child::before{
+    display: none;
+}
+ *******/
+
+/****** footer *******/
+
+.footer{
+    display: flex;
+    width: 800px;
+    margin: auto;
+    height: 80px;
+    position: relative;
+    padding: 10px;
+    background: #5c5c5c;
+}
+
+.header{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    height: 80px;
+    padding: 10px;
+    background: #5c5c5c;
+}
+
+.footer_wrapper, .header_wrapper{
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+
+.footer_wrapper ul,
+.header_wrapper ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_wrapper ul li,
+.header_wrapper ul li{
+    width: 50px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.footer .footer_wrapper ul li .youtube img{
+    width: 30px;
+}
+
+
+
+/**************************************************/
 
 .project{
     display: flex;
     justify-content: space-between;
+
 }
 
 
@@ -254,44 +357,3 @@ pre{
     border: solid #0bb5f4;
     border-radius: 30px;
 }
-
-/*************/
-
-
-/****** footer *******/
-
-.footer{
-    display: flex;
-    width: 800px;
-    margin: -60px auto 0;
-    height: 80px;
-    position: relative;
-    padding: 10px;
-    background: #0bb5f4;
-}
-
-.footer .footer_wrapper,
-.header_wrapper{
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-    
-}
-
-.footer .footer_wrapper ul,
-.header_wrapper ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .footer_wrapper ul li,
-.header_wrapper ul li{
-    width: 50px;
-    margin: 0 auto;
-}
-
-.footer .footer_wrapper ul li .youtube img {
-    width: 30px;
-}
-
-
