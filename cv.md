@@ -29,3 +29,26 @@ EPAM
 * HTML/CSS    - 43/100%
 * JavaScript  - 15/100%    
 * GIT         - 18/100%    
+
+### Code examples
+
+```
+                    function multiply(a, b){
+                        return a * b;
+                        }​
+                        multiply();
+                    
+```
+
+
+
+### English
+#### 2020 - Present
+
+Elementary
+
+### Project
+[WILDLIFE](https://rolling-scopes-school.github.io/bubnov-roma-JSFE2021Q1/wildlife/) - My first layout job. Used technology stack: HTML, CSS, Git.
+
+
+### 2021-2022 [RS School](https://app.rs.school) 
